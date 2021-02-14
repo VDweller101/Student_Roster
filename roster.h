@@ -7,7 +7,7 @@ public:
 	const static int numStudents = 5;
 	Student* studentRosterArray[numStudents];
 	void parse(string row);
-	void add(string studentID, string firstName, string lastName, string emailAddress, int age, int[] courseDays, DegreeType degreeProgram);
+	void add(string studentID, string firstName, string lastName, string emailAddress, int age, int courseDays[], DegreeType degreeProgram);
 	void printAll();
 	void printByDegreeType(DegreeType degreeProgram);
 	void printInvalidEmails();

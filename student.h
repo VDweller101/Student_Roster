@@ -15,13 +15,13 @@ private:
 	string lastName;
 	string emailAddress;
 	int age;
-	int courseDays[];
+	int courseDays[courseDaysArraySize];
 	DegreeType degreeProgram;
 
 public:
 	Student();
-	Student(string studentID, string firstName, string lastName, string emailAddress, int age, int[] courseDays, DegreeType degreeProgram);
-	-Student();
+	Student(string studentID, string firstName, string lastName, string emailAddress, int age, int courseDays[], DegreeType degreeProgram);
+	~Student();
 
 	string getStudentID();
 	string getFirstName();
@@ -36,7 +36,7 @@ public:
 	void setLastName(string lastName);
 	void setEmailAddress(string emailAddress);
 	void setAge(int age);
-	void setCourseDays(int[] courseDays);
+	void setCourseDays(int courseDays[]);
 	void setDegreeProgram(DegreeType degreeType);
 
 	static void printInfoHeader();
